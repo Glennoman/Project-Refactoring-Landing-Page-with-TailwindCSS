@@ -7,7 +7,6 @@
 @layer base {
   body {
     padding: 20px;
-    box-sizing: border-box;
   }
 }
 
@@ -127,18 +126,9 @@ a {
   margin-right: 20px;
 }
 
-/* .button-container {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10 50px;
-    align-items: center;
-} */
-
 /* Background color container */
 .background-container {
-  z-index: -1;
+  /* z-index: -1; */
   position: absolute;
   width: 50%;
   margin: 0;
@@ -146,82 +136,6 @@ a {
   left: 0;
   height: 100%;
   background-color: rgb(38, 15, 92);
-}
-
-/* Form container */
-.form-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 500px; /* Ensure full height */
-  width: 500px;
-  top: 50%; /* Position according to viewport*/
-  left: 75%; /* Position according to viewport */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Adjust for the container's own dimensions */
-  gap: 20px;
-  background-color: rgba(255, 255, 255, 0.785);
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2); /* Add shadow effect */
-  border-radius: 15px; /* Rounded edges for the container */
-}
-
-.form-container h1 {
-  position: relative;
-  bottom: 25px;
-}
-
-/* Individual columns */
-.col {
-  position: relative;
-  right: 90px;
-}
-
-/* container row */
-.col input {
-  background-color: rgb(38, 15, 92);
-  font-size: large;
-  color: #555;
-  border-radius: 5px; /* More rounded corners */
-  padding: 15px;
-  margin-top: 15px;
-  width: 170%;
-  border: none; /* Removing default border */
-  box-sizing: border-box; /* padding does not affect width like this */
-}
-
-/* sign up column */
-.col-2 {
-  position: relative;
-  right: 90px;
-}
-
-/* input modifications */
-.col-2 input {
-  border-radius: 5px;
-  padding: 15px;
-  margin-top: 10px;
-  width: 170%;
-  background-color: rgb(50, 128, 222); /* Overriding the background color */
-  color: white;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-/* input modifications Login! */
-.col-3 input {
-  background-color: rgb(38, 15, 92);
-  font-size: large;
-  color: #555;
-  border-radius: 5px;
-  padding: 15px;
-  width: 434px;
-  border: none; /* Removing default border */
-  box-sizing: border-box; /* padding does not affect width like this*/
 }
 
 /* input modifications Login! */
@@ -238,19 +152,6 @@ a {
 /* Testing settings */
 .form-container p {
   text-align: center;
-}
-/* Image sign-up form */
-.image-join {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-}
-
-.image-join img {
-  position: relative;
-  height: 50%;
-  width: auto;
-  left: 10%;
 }
 
 button,

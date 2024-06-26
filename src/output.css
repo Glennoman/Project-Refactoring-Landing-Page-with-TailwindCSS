@@ -864,7 +864,6 @@ h3{
 
 body {
   padding: 20px;
-  box-sizing: border-box;
 }
 
 *, ::before, ::after{
@@ -1112,8 +1111,48 @@ body {
   position: relative;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.left-10{
+  left: 2.5rem;
+}
+
+.left-\[15\%\]{
+  left: 15%;
+}
+
+.left-\[20\%\]{
+  left: 20%;
+}
+
 .left-\[50px\]{
   left: 50px;
+}
+
+.left-\[75\%\]{
+  left: 75%;
+}
+
+.right-\[90px\]{
+  right: 90px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.left-\[25\%\]{
+  left: 25%;
 }
 
 .col-span-1{
@@ -1138,6 +1177,18 @@ body {
 
 .ml-\[50px\]{
   margin-left: 50px;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-\[10px\]{
+  margin-top: 10px;
+}
+
+.box-border{
+  box-sizing: border-box;
 }
 
 .block{
@@ -1168,16 +1219,60 @@ body {
   display: none;
 }
 
+.h-\[100vh\]{
+  height: 100vh;
+}
+
+.h-\[50\%\]{
+  height: 50%;
+}
+
 .h-\[500px\]{
   height: 500px;
+}
+
+.max-h-\[100\%\]{
+  max-height: 100%;
 }
 
 .max-h-\[300px\]{
   max-height: 300px;
 }
 
+.max-h-full{
+  max-height: 100%;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
 .w-2{
   width: 0.5rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-\[170\%\]{
+  width: 170%;
+}
+
+.w-\[434px\]{
+  width: 434px;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-auto{
+  width: auto;
 }
 
 .w-fit{
@@ -1187,14 +1282,6 @@ body {
 
 .w-full{
   width: 100%;
-}
-
-.w-1{
-  width: 0.25rem;
-}
-
-.w-4{
-  width: 1rem;
 }
 
 .max-w-\[90\%\]{
@@ -1224,6 +1311,16 @@ body {
 
 .border-collapse{
   border-collapse: collapse;
+}
+
+.translate-x-\[-50\%\]{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-50\%\]{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform{
@@ -1338,8 +1435,16 @@ body {
   border-radius: 0.25rem;
 }
 
+.rounded-\[15px\]{
+  border-radius: 15px;
+}
+
 .rounded-\[50px\]{
   border-radius: 50px;
+}
+
+.rounded-\[5px\]{
+  border-radius: 5px;
 }
 
 .rounded-r-\[20\%\]{
@@ -1358,6 +1463,48 @@ body {
 .bg-background{
   --tw-bg-opacity: 1;
   background-color: rgb(38 15 92 / var(--tw-bg-opacity));
+}
+
+.bg-backgroundSign{
+  background-color: rgba(255, 255, 255, 0.785);
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-tertiary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 128 222 / var(--tw-bg-opacity));
+}
+
+.p-\[10px\]{
+  padding: 10px;
+}
+
+.p-\[20px\]{
+  padding: 20px;
+}
+
+.p-\[15px\]{
+  padding: 15px;
+}
+
+.p-\[14px\]{
+  padding: 14px;
+}
+
+.p-\[13px\]{
+  padding: 13px;
+}
+
+.p-\[12px\]{
+  padding: 12px;
+}
+
+.p-\[11px\]{
+  padding: 11px;
 }
 
 .px-\[50px\]{
@@ -1390,6 +1537,11 @@ body {
   font-size: 70px;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1413,6 +1565,11 @@ body {
 
 .not-italic{
   font-style: normal;
+}
+
+.text-background{
+  --tw-text-opacity: 1;
+  color: rgb(38 15 92 / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -1448,6 +1605,17 @@ body {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .outline{
@@ -1511,19 +1679,10 @@ a {
   margin-right: 20px;
 }
 
-/* .button-container {
-    display: flex; 
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10 50px;
-    align-items: center;
-} */
-
 /* Background color container */
 
 .background-container {
-  z-index: -1;
+  /* z-index: -1; */
   position: absolute;
   width: 50%;
   margin: 0;
@@ -1531,102 +1690,6 @@ a {
   left: 0;
   height: 100%;
   background-color: rgb(38, 15, 92);
-}
-
-/* Form container */
-
-.form-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Center vertically */
-  align-items: center;
-  /* Center horizontally */
-  height: 500px;
-  /* Ensure full height */
-  width: 500px;
-  top: 50%;
-  /* Position according to viewport*/
-  left: 75%;
-  /* Position according to viewport */
-  transform: translate(
-    -50%,
-    -50%
-  );
-  /* Adjust for the container's own dimensions */
-  gap: 20px;
-  background-color: rgba(255, 255, 255, 0.785);
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(1, 1, 1, 0.2);
-  /* Add shadow effect */
-  border-radius: 15px;
-  /* Rounded edges for the container */
-}
-
-.form-container h1 {
-  position: relative;
-  bottom: 25px;
-}
-
-/* Individual columns */
-
-.col {
-  position: relative;
-  right: 90px;
-}
-
-/* container row */
-
-.col input {
-  background-color: rgb(38, 15, 92);
-  font-size: large;
-  color: #555;
-  border-radius: 5px;
-  /* More rounded corners */
-  padding: 15px;
-  margin-top: 15px;
-  width: 170%;
-  border: none;
-  /* Removing default border */
-  box-sizing: border-box;
-  /* padding does not affect width like this */
-}
-
-/* sign up column */
-
-.col-2 {
-  position: relative;
-  right: 90px;
-}
-
-/* input modifications */
-
-.col-2 input {
-  border-radius: 5px;
-  padding: 15px;
-  margin-top: 10px;
-  width: 170%;
-  background-color: rgb(50, 128, 222);
-  /* Overriding the background color */
-  color: white;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-/* input modifications Login! */
-
-.col-3 input {
-  background-color: rgb(38, 15, 92);
-  font-size: large;
-  color: #555;
-  border-radius: 5px;
-  padding: 15px;
-  width: 434px;
-  border: none;
-  /* Removing default border */
-  box-sizing: border-box;
-  /* padding does not affect width like this*/
 }
 
 /* input modifications Login! */
@@ -1645,21 +1708,6 @@ a {
 
 .form-container p {
   text-align: center;
-}
-
-/* Image sign-up form */
-
-.image-join {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-}
-
-.image-join img {
-  position: relative;
-  height: 50%;
-  width: auto;
-  left: 10%;
 }
 
 button,
@@ -1819,20 +1867,12 @@ footer {
 }
 
 @media (min-width: 768px){
-  .md\:w-2\/5{
-    width: 40%;
-  }
-
   .md\:w-1\/6{
     width: 16.666667%;
   }
 }
 
 @media (min-width: 300px) and (max-width: 640px){
-  .xs\:w-\[200px\]{
-    width: 200px;
-  }
-
   .xs\:w-4\/6{
     width: 66.666667%;
   }

@@ -13,7 +13,9 @@ module.exports = {
       colors: {
         primary: "#8053ff",
         secondary: "rgb(104, 104, 104)",
+        tertiary: "rgb(50, 128, 222)",
         background: "rgb(38, 15, 92)",
+        backgroundSign: "rgba(255, 255, 255, 0.785)",
       },
       gridTemplateColumns: {
         2: "repeat(2, minmax(150px, 1fr))",

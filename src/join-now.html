@@ -2,37 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 
 <body>
-    <div class="background-container"></div>
-    <div class="image-join">
-        <img src="assets/coding.png" alt="Coding" width="240" height="180" />
+    <div class="bg-background absolute w-[50%] max-h-[100%] top-0 left-0 m-0 ">
+        <div class="flex items-center h-[100vh]">
+            <img class="relative h-[50%] w-auto left-[25%]" src="assets/coding.png" alt="Coding" width="240"
+                height="180" />
+        </div>
     </div>
-    <div class="form-container">
-        <h1 class="title" >Join Coders Now!</h1>
+    <div
+        class="absolute flex flex-col justify-center items-center h-[500px] w-[500px] top-[50%] left-[75%] translate-x-[-50%] translate-y-[-50%] gap-[20px] bg-backgroundSign p-[20px] shadow-xl rounded-[15px]">
+        <h1 class="text-primary">Join Coders Now!</h1>
         <form id="form" action="/join-now.html" method="POST">
-            <div class="col">
-                <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+            <div class="relative right-[90px]">
+                <input class="bg-background text-lg text-secondary rounded-[5px] p-[10px] w-[170%]" type="text"
+                    name="firstName" id="firstName" placeholder="First Name" />
             </div>
-            <div class="col">
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+            <div class="relative right-[90px]">
+                <input class="bg-background text-lg text-secondary rounded-[5px] p-[10px] w-[170%] mt-1" type="text"
+                    name="lastName" id="lastName" placeholder="Last Name" />
             </div>
-            <div class="col">
-                <input type="text" name="email" id="email" placeholder="Email" />
+            <div class="relative right-[90px]">
+                <input class="bg-background text-lg text-secondary rounded-[5px] p-[10px] w-[170%] mt-1" type="text"
+                    name="email" id="email" placeholder="Email" />
             </div>
-            <div class="col">
-                <input type="password" name="password" id="password" minlength="8" required placeholder="Password" />
+            <div class="relative right-[90px]">
+                <input class="bg-background text-lg text-secondary rounded-[5px] p-[10px] w-[170%] mt-1" type="password"
+                    name="password" id="password" minlength="8" required placeholder="Password" />
             </div>
-            <div class="col-2">
-                <input type="submit" value="Sign Up" />                
+            <div class="relative right-[90px]">
+                <input class="rounded-[5px] p-[10px] mt-[10px] bg-tertiary text-white w-[170%]" type="submit"
+                    value="Sign Up" />
             </div>
-            <div class="login-text">
-            <p>Already have an account? <a href="login.html">Login</a></p>
+            <div>
+                <p>Already have an account? <a class="text-background" href="login.html">Login</a></p>
             </div>
         </form>
     </div>

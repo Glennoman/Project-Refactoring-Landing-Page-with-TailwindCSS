@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Document</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
 <body>
-    <div class="background-container"></div>
-    <div class="image-join">
-        <img src="assets/coding.png" alt="Coding" width="240" height="180"/>
+    <div class="bg-background absolute w-[50%] max-h-[100%] top-0 left-0 m-0 ">
+        <div class="flex items-center h-[100vh]">
+            <img class="relative h-[50%] w-auto left-[25%]" src="assets/coding.png" alt="Coding" width="240"
+                height="180" />
+        </div>
     </div>
-    <div class="form-container">
-        <h1 class="title">Join Coders Now!</h1>
-        <div class="col-3">    
-            <input type="text" name="email" id="email" placeholder="Email"/>
+    <div
+        class="absolute flex flex-col justify-center items-center h-[500px] w-[500px] top-[50%] left-[75%] translate-x-[-50%] translate-y-[-50%] gap-[20px] bg-backgroundSign p-[20px] shadow-xl rounded-[15px]">
+        <h1 class="text-primary">Join Coders Now!</h1>
+        <div>
+            <input class="bg-background text-lg text-secondary rounded-[5px] p-[10px] w-[434px] outline-none box-border"
+                type="text" name="email" id="email" placeholder="Email" />
         </div>
-        <div class="col-3">
-            <input type="text" name="password" id="password" minlength="8" required placeholder="Password"/>
+        <div>
+            <input class="bg-background text-lg text-secondary rounded-[5px] p-[10px] w-[434px] outline-none box-border"
+                type="text" name="password" id="password" minlength="8" required placeholder="Password" />
         </div>
-        <div class="col-4">
-            <input type="submit" value="Sign In"/>
-            <p>New to CodeCLA? <a href="join-now.html">Signup</a></p>
+        <div>
+            <input class="bg-tertiary text-lg text-white rounded-[5px] p-[11px] w-[434px] outline-none box-border"
+                type="submit" value="Sign In" />
+            <p class="text-center">New to CodeCLA? <a class="text-background" href="join-now.html">Signup</a></p>
         </div>
-        
+
     </div>
 </body>
+
 </html>

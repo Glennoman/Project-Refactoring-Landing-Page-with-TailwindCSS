@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
   yearElement.textContent = currentYear;
 
   // Selecting form element
-  const form = document.querySelector(".contactForm");
+  const form = document.querySelector("#contactForm");
 
   // Event listener for form submission
   form.addEventListener("submit", function (event) {

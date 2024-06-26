@@ -180,22 +180,23 @@
         <div class="absolute bg-background text-white h-[500px] w-full rounded-tl-[5rem] m-0">
             <h1 class="relative left-[50px] text-white">Contact us</h1>
             <form id="contactForm">
-                <label class="relative ml-[50px] inline w-[15%]" for="Name">Name</label><br />
-                <input class="relative ml-[50px] inline w-[15%] text-black" type="text" id="name" name="name"
+                <label class="relative ml-[50px] inline" for="Name">Name</label><br />
+                <input class="relative ml-[50px] inline text-black md:w-1/6" type="text" id="name" name="name"
                     placeholder="Enter your name"><br />
                 <div class="error-message" id="name-error"></div>
 
-                <label class="relative ml-[50px] inline w-[15%]" for="Email">Email</label><br />
-                <input class="relative ml-[50px] inline w-[15%] text-black" type="text" id="email" name="email"
+                <label class="relative ml-[50px] inline" for="Email">Email</label><br />
+                <input class="relative ml-[50px] inline text-black md:w-1/6" type="text" id="email" name="email"
                     placeholder="Enter your email"><br />
                 <div class="error-message" id="email-error"></div>
 
-                <label class="relative ml-[50px] inline w-[15%]" for="Message">Message</label><br />
-                <textarea class="relative ml-[50px] inline w-[15%] text-black" id="message" name="message" rows="4"
-                    placeholder="Enter your message"></textarea><br>
+                <label class="relative ml-[50px] inline" for="Message">Message</label><br />
+                <textarea class="relative ml-[50px] inline text-black md:w-1/6 w-full xs:w-4/6" id="message"
+                    name="message" rows="4" placeholder="Enter your message"></textarea><br>
                 <div class="error-message" id="message-error"></div>
 
-                <button class="relative inline w-[10%] ml-[50px] submit-button" id="swal">Submit</button>
+                <button class="relative inline max-w-fit ml-[50px] submit-button" type="submit"
+                    id="swal">Submit</button>
             </form>
 
             <footer>

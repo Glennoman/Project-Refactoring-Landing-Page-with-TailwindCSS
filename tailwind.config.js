@@ -5,11 +5,11 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.css"],
   theme: {
-    screens: {
-      xs: { min: "300px", max: "640px" },
-      ...defaultTheme.screens,
-    },
     extend: {
+      screens: {
+        xs: { min: "300px", max: "640px" },
+        ...defaultTheme.screens,
+      },
       colors: {
         primary: "#8053ff",
         secondary: "rgb(104, 104, 104)",

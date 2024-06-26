@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
 @layer components {
   .square {
     background-color: #f0f0f0;
